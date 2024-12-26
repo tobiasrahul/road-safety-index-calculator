@@ -1,22 +1,207 @@
+/* app.css */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
+}
+
+/* Navbar-specific styles */
+.MuiAppBar-root {
+    transition: all 0.3s ease !important;
+}
+
+.MuiButton-root {
+    text-transform: none !important;
+    padding: 8px 16px !important;
+    border-radius: 8px !important;
+}
+
+@media (max-width: 768px) {
+    .MuiToolbar-root {
+        padding: 1rem !important;
+    }
+
+    .MuiButton-root {
+        margin: 0.25rem 0 !important;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
   }
   
   .page-container {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-    background: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
   }
   
+  .calculator-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    animation: slideIn 0.5s ease-out;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .score-display {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: pulse 2s infinite;
+  }
+  
+  .score-high {
+    background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  }
+  
+  .score-medium {
+    background: linear-gradient(45deg, #FFE53B 0%, #FF2525 100%);
+  }
+  
+  .score-low {
+    background: linear-gradient(45deg, #FF9A8B 0%, #FF6B6B 100%);
+  }
+  
+  .submit-button {
+    background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%);
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+.home-container {
+    min-height: 100vh;
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfbcf2 100%);  /* light blue to light purple gradient */
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    color: #8b7cc1;  /* light purple */
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #7a9bd6;  /* light blue */
+    margin-bottom: 30px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(207, 188, 242, 0.2);  /* light purple shadow */
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    color: #8b7cc1;  /* light purple */
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+  
+  .feature-card p {
+    color: #7a9bd6;  /* light blue */
+    line-height: 1.6;
+  }
+  
+  .cta-section {
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .cta-section h2 {
+    color: #8b7cc1;  /* light purple */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-section p {
+    color: #7a9bd6;  /* light blue */
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+    
+    .features-grid {
+      grid-template-columns: 1fr;
+      padding: 0 20px;
+    }
+    
+    .cta-section h2 {
+      font-size: 1.5rem;
+    }
+  }
