@@ -66,5 +66,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# 1. Steps to Get Node Modules on Your Machine:
+```
+git clone https://github.com/tobiasrahul/road-safety-index-calculator.git
+cd road-safety-index-calculator
+```
+# 2. Install Dependencies Using package.json:
+When you ran the command npm install, it created a package.json file that lists all the dependencies (like @mui/material, axios, etc.). Your friend can install these dependencies using:
+```
+npm install
+```
+
+After running npm install, the node_modules folder will be created locally on your friend's machine.
+
+# 3. Verify Installation: 
+Your friend can check if the dependencies are properly installed by running the app:
+```
+npm start
+```
