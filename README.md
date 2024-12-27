@@ -75,15 +75,15 @@ git clone https://github.com/tobiasrahul/road-safety-index-calculator.git
 cd road-safety-index-calculator
 ```
 # 2. Install Dependencies Using package.json:
-When you ran the command npm install, it created a package.json file that lists all the dependencies (like @mui/material, axios, etc.). Your friend can install these dependencies using:
+When you ran the command npm install, it created a package.json file that lists all the dependencies (like @mui/material, axios, etc.). You can install these dependencies using:
 ```
 npm install
 ```
 
-After running npm install, the node_modules folder will be created locally on your friend's machine.
+After running npm install, the node_modules folder will be created locally on your machine.
 
 # 3. Verify Installation: 
-Your friend can check if the dependencies are properly installed by running the app:
+You can check if the dependencies are properly installed by running the app:
 ```
 npm start
 ```
